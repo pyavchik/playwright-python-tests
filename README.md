@@ -60,6 +60,14 @@ playwright install
 
 > **Note for Linux:** If you get "externally-managed-environment" error, use Option 1 (virtual environment).
 
+### Activate virtual environment
+
+Every time you want to run tests:
+
+```bash
+source venv/bin/activate
+```
+
 ## Configuration
 
 All configuration is done via `.env` file:
