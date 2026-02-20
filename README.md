@@ -32,6 +32,9 @@ python3 -m venv venv
 # Activate virtual environment
 source venv/bin/activate
 
+# Upgrade pip to latest version
+pip install --upgrade pip
+
 # Install Python dependencies
 pip install -r requirements.txt
 
@@ -44,6 +47,9 @@ playwright install
 ```bash
 # Navigate to project directory
 cd playwright-tests
+
+# Upgrade pip to latest version
+pip install --upgrade pip
 
 # Install Python dependencies
 pip install -r requirements.txt
