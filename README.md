@@ -164,7 +164,7 @@ allure open reports/allure-report
 ## Project Structure
 
 ```
-playwright-tests/
+playwright-python-tests/
 ├── .env                    # Environment configuration
 ├── pytest.ini              # Pytest configuration
 ├── requirements.txt       # Python dependencies
