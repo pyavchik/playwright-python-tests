@@ -186,9 +186,13 @@ def config() -> dict:
 @pytest.fixture(scope="session", autouse=True)
 def add_allure_environment_info(browser_type):
     """Add environment information to Allure report."""
-    # Use allure.dynamic for environment variables (newer allure-pytest versions)
-    allure.dynamic.env("Platform", "macOS")
-    allure.dynamic.env("Browser", browser_type.name.capitalize())
-    allure.dynamic.env("Headless", str(HEADLESS))
-    allure.dynamic.env("Base_URL", BASE_URL)
-    allure.dynamic.env("PythonVersion", os.sys.version.split()[0])
+    try:
+        # Try newer allure-pytest API
+        allure.dynamic.env("Platform", "macOS")
+        allure.dynamic.env("Browser", browser_type.name.capitalize())
+        allure.dynamic.env("Headless", str(HEADLESS))
+        allure.dynamic.env("Base_URL", BASE_URL)
+        allure.dynamic.env("PythonVersion", os.sys.version.split()[0])
+    except AttributeError:
+        # Fallback: skip if not available (older versions)
+        pass
