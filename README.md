@@ -20,6 +20,27 @@ A production-ready test automation framework using Playwright, pytest, and Allur
 
 ## Installation
 
+### Option 1: Virtual Environment (Recommended for Linux)
+
+```bash
+# Navigate to project directory
+cd playwright-tests
+
+# Create virtual environment
+python3 -m venv venv
+
+# Activate virtual environment
+source venv/bin/activate
+
+# Install Python dependencies
+pip install -r requirements.txt
+
+# Install Playwright browsers
+playwright install
+```
+
+### Option 2: macOS / Windows / Linux with pipx
+
 ```bash
 # Navigate to project directory
 cd playwright-tests
@@ -29,6 +50,16 @@ pip install -r requirements.txt
 
 # Install Playwright browsers
 playwright install
+```
+
+> **Note for Linux:** If you get "externally-managed-environment" error, use Option 1 (virtual environment).
+
+### Activate virtual environment
+
+Every time you want to run tests:
+
+```bash
+source venv/bin/activate
 ```
 
 ## Configuration
