@@ -1,0 +1,10 @@
+playwright
+pytest-playwright
+pytest
+allure-pytest
+allure-python-commons
+python-dotenv
+loguru
+pytest-xdist
+pytest-rerunfailures
+faker
