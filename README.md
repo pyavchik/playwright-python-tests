@@ -42,7 +42,7 @@ pip install -r requirements.txt
 playwright install
 ```
 
-### Option 2: macOS / Windows / Linux with pipx
+### Option 2: macOS / Windows
 
 ```bash
 # Navigate to project directory
