@@ -24,7 +24,7 @@ A production-ready test automation framework using Playwright, pytest, and Allur
 
 ```bash
 # Navigate to project directory
-cd playwright-tests
+cd playwright-python-tests
 
 # Create virtual environment
 python3 -m venv venv
@@ -46,7 +46,7 @@ playwright install
 
 ```bash
 # Navigate to project directory
-cd playwright-tests
+cd playwright-python-tests
 
 # Upgrade pip to latest version
 pip install --upgrade pip
